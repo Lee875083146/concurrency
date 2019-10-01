@@ -13,7 +13,7 @@ public class ExceptionRunnable implements Runnable {
 
     @Override
     public void run() {
-        log.info("ExceptionRunnable- run ");
+        log.info("ExceptionRunnable- run-Thread-name:{} ", Thread.currentThread().getName());
         throw new IllegalArgumentException("exception");
     }
 }
